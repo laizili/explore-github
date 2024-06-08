@@ -1,0 +1,8 @@
+name: Echo 
+on:
+  push:
+    branch: [ 'main' ]
+jobs:
+  echo:
+    steps:
+      - run: echo 'hello github, I'm ${{context.actor}}.'
