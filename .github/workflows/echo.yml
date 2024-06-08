@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo 'hello github, I'm ${{github.actor}}.'
+          echo "hello github, I'm ${{github.actor}}."
