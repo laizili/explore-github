@@ -4,10 +4,11 @@ on:
     branches: [ 'main' ]
 jobs:
   echo:
+    environment: development
     runs-on: ubuntu-latest
     steps:
       - run: |
           echo "hello github, I'm ${{github.actor}}."
       - name: echo envs
         run: | 
-          echo "${{env.development.vars}}"
+          echo "${{vars.dev}}"
