@@ -9,4 +9,5 @@ jobs:
       - run: |
           echo "hello github, I'm ${{github.actor}}."
       - name: echo envs
-        run: echo ${{vars.DEV}}
+        run: | 
+          echo "${{env.development.vars}}"
